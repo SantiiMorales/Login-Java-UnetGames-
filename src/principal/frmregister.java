@@ -20,6 +20,7 @@ public class frmregister extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         setResizable(false);
+        setTitle("UnetGames");
     }
 
     /**
@@ -30,37 +31,46 @@ public class frmregister extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         BgPanel = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         IMG = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel12 = new javax.swing.JPanel();
         Username = new javax.swing.JLabel();
         userTxt = new javax.swing.JTextField();
-        jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
+        jPanel9 = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
+        Email = new javax.swing.JLabel();
+        emailTxt = new javax.swing.JTextField();
+        jPanel13 = new javax.swing.JPanel();
+        jPanel15 = new javax.swing.JPanel();
+        jPanel8 = new javax.swing.JPanel();
         Password = new javax.swing.JLabel();
         passTxt = new javax.swing.JPasswordField();
+        vista = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jPanel14 = new javax.swing.JPanel();
         SignInBtn = new javax.swing.JPanel();
         signInTxt = new javax.swing.JLabel();
         RegisterBtn = new javax.swing.JPanel();
         registerTxt = new javax.swing.JLabel();
-        Color = new javax.swing.JLabel();
-        colorTxt = new javax.swing.JTextField();
-        jSeparator3 = new javax.swing.JSeparator();
-        Email = new javax.swing.JLabel();
-        emailTxt = new javax.swing.JTextField();
-        jSeparator5 = new javax.swing.JSeparator();
-        vista = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(800, 600));
+        setMinimumSize(new java.awt.Dimension(797, 520));
+        setPreferredSize(new java.awt.Dimension(797, 520));
 
         BgPanel.setBackground(new java.awt.Color(2, 21, 38));
+        BgPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(2, 21, 38));
-        jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 7, 50));
+        jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 27, 50));
 
         IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo_unet_blanco.png"))); // NOI18N
         jPanel1.add(IMG);
@@ -70,20 +80,42 @@ public class frmregister extends javax.swing.JFrame {
         jLabel1.setText("UNET Gamehub");
         jPanel1.add(jLabel1);
 
+        BgPanel.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 797, 150));
+
         jPanel2.setBackground(new java.awt.Color(2, 21, 38));
+        jPanel2.setLayout(new java.awt.GridLayout(5, 1));
+
+        jPanel3.setOpaque(false);
+        jPanel3.setPreferredSize(new java.awt.Dimension(1084, 100));
+        jPanel3.setLayout(new java.awt.GridBagLayout());
+
+        jPanel5.setOpaque(false);
+
+        jPanel12.setMaximumSize(new java.awt.Dimension(32767, 50));
+        jPanel12.setMinimumSize(new java.awt.Dimension(244, 50));
+        jPanel12.setOpaque(false);
+        jPanel12.setPreferredSize(new java.awt.Dimension(305, 50));
+        jPanel12.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 15, 9));
 
         Username.setBackground(new java.awt.Color(226, 226, 182));
         Username.setFont(new java.awt.Font("Samsung Sans", 0, 18)); // NOI18N
-        Username.setForeground(new java.awt.Color(226, 226, 182));
+        Username.setForeground(new java.awt.Color(226, 226, 226));
         Username.setText("Username:");
+        Username.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel12.add(Username);
 
         userTxt.setBackground(new java.awt.Color(2, 21, 38));
+        userTxt.setColumns(15);
         userTxt.setFont(new java.awt.Font("Samsung Sans", 0, 14)); // NOI18N
-        userTxt.setForeground(new java.awt.Color(226, 226, 182));
-        userTxt.setText("Enter your username");
-        userTxt.setBorder(null);
-        userTxt.setMaximumSize(new java.awt.Dimension(96, 22));
-        userTxt.setMinimumSize(new java.awt.Dimension(96, 22));
+        userTxt.setForeground(new java.awt.Color(226, 226, 226));
+        userTxt.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        userTxt.setText("username");
+        userTxt.setAlignmentY(0.0F);
+        userTxt.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(242, 242, 242)));
+        userTxt.setMargin(new java.awt.Insets(2, 6, 10, 6));
+        userTxt.setMaximumSize(new java.awt.Dimension(170, 20));
+        userTxt.setMinimumSize(new java.awt.Dimension(130, 20));
+        userTxt.setName(""); // NOI18N
         userTxt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 userTxtMouseClicked(evt);
@@ -94,30 +126,152 @@ public class frmregister extends javax.swing.JFrame {
                 userTxtActionPerformed(evt);
             }
         });
+        jPanel12.add(userTxt);
 
-        Password.setBackground(new java.awt.Color(226, 226, 182));
+        jPanel5.add(jPanel12);
+
+        jPanel3.add(jPanel5, new java.awt.GridBagConstraints());
+
+        jPanel2.add(jPanel3);
+        jPanel3.getAccessibleContext().setAccessibleName("");
+
+        jPanel9.setOpaque(false);
+        jPanel9.setLayout(new java.awt.GridBagLayout());
+
+        jPanel10.setOpaque(false);
+        jPanel6.setPreferredSize(jPanel6.getPreferredSize());
+        java.awt.FlowLayout flowLayout1 = new java.awt.FlowLayout();
+        flowLayout1.setAlignOnBaseline(true);
+        jPanel10.setLayout(flowLayout1);
+        jPanel9.add(jPanel10, new java.awt.GridBagConstraints());
+
+        jPanel11.setOpaque(false);
+        jPanel11.setPreferredSize(new java.awt.Dimension(300, 40));
+        jPanel11.setLayout(new java.awt.GridBagLayout());
+
+        Email.setBackground(new java.awt.Color(226, 226, 182));
+        Email.setFont(new java.awt.Font("Samsung Sans", 0, 18)); // NOI18N
+        Email.setForeground(new java.awt.Color(226, 226, 226));
+        Email.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Email.setText("Email:");
+        Email.setToolTipText("");
+        Email.setAlignmentY(1.0F);
+        Email.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Email.setPreferredSize(new java.awt.Dimension(50, 30));
+        Email.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 0, 32);
+        jPanel11.add(Email, gridBagConstraints);
+
+        emailTxt.setBackground(new java.awt.Color(2, 21, 38));
+        emailTxt.setColumns(15);
+        emailTxt.setFont(new java.awt.Font("Samsung Sans", 0, 14)); // NOI18N
+        emailTxt.setForeground(new java.awt.Color(226, 226, 226));
+        emailTxt.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        emailTxt.setText("example@unet.edu.ve");
+        emailTxt.setAlignmentY(0.0F);
+        emailTxt.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(226, 226, 226)));
+        emailTxt.setMargin(new java.awt.Insets(1, 27, 1, 27));
+        emailTxt.setMaximumSize(new java.awt.Dimension(196, 20));
+        emailTxt.setMinimumSize(new java.awt.Dimension(166, 27));
+        emailTxt.setPreferredSize(new java.awt.Dimension(160, 24));
+        emailTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                emailTxtMouseClicked(evt);
+            }
+        });
+        emailTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emailTxtActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(12, 21, 12, 19);
+        jPanel11.add(emailTxt, gridBagConstraints);
+
+        jPanel9.add(jPanel11, new java.awt.GridBagConstraints());
+
+        jPanel2.add(jPanel9);
+
+        jPanel13.setOpaque(false);
+        jPanel13.setLayout(new java.awt.GridBagLayout());
+
+        jPanel15.setOpaque(false);
+        jPanel6.setPreferredSize(jPanel6.getPreferredSize());
+        java.awt.FlowLayout flowLayout2 = new java.awt.FlowLayout();
+        flowLayout2.setAlignOnBaseline(true);
+        jPanel15.setLayout(flowLayout2);
+
+        jPanel8.setMaximumSize(new java.awt.Dimension(32767, 50));
+        jPanel8.setMinimumSize(new java.awt.Dimension(297, 50));
+        jPanel8.setOpaque(false);
+        jPanel8.setPreferredSize(new java.awt.Dimension(360, 50));
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Password.setBackground(new java.awt.Color(226, 226, 226));
         Password.setFont(new java.awt.Font("Samsung Sans", 0, 18)); // NOI18N
-        Password.setForeground(new java.awt.Color(226, 226, 182));
+        Password.setForeground(new java.awt.Color(226, 226, 226));
         Password.setText("Password:");
+        Password.setToolTipText("");
+        Password.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Password.setPreferredSize(new java.awt.Dimension(90, 24));
+        jPanel8.add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 9, 90, 30));
 
         passTxt.setBackground(new java.awt.Color(2, 21, 38));
+        passTxt.setColumns(12);
         passTxt.setFont(new java.awt.Font("Samsung Sans", 0, 14)); // NOI18N
-        passTxt.setForeground(new java.awt.Color(226, 226, 182));
-        passTxt.setText("jPasswordField1");
-        passTxt.setBorder(null);
-        passTxt.setMaximumSize(new java.awt.Dimension(96, 22));
-        passTxt.setMinimumSize(new java.awt.Dimension(96, 22));
+        passTxt.setForeground(new java.awt.Color(226, 226, 226));
+        passTxt.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        passTxt.setText("clavesegura12345");
+        passTxt.setToolTipText("");
+        passTxt.setActionCommand("<Not Set>");
+        passTxt.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(226, 226, 226)));
+        passTxt.setFocusCycleRoot(true);
+        passTxt.setMargin(new java.awt.Insets(1, 9, 10, 29));
+        passTxt.setMaximumSize(new java.awt.Dimension(12312, 20));
+        passTxt.setMinimumSize(new java.awt.Dimension(120, 20));
         passTxt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 passTxtMouseClicked(evt);
             }
         });
+        passTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passTxtActionPerformed(evt);
+            }
+        });
+        jPanel8.add(passTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 7, 165, 30));
+
+        vista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/vista.png"))); // NOI18N
+        vista.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        vista.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                vistaMousePressed(evt);
+            }
+        });
+        jPanel8.add(vista, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 7, -1, -1));
+
+        jPanel15.add(jPanel8);
+
+        jPanel13.add(jPanel15, new java.awt.GridBagConstraints());
+
+        jPanel6.setOpaque(false);
+        jPanel13.add(jPanel6, new java.awt.GridBagConstraints());
+
+        jPanel2.add(jPanel13);
+
+        jPanel7.setOpaque(false);
+        jPanel7.setLayout(new java.awt.BorderLayout());
+
+        jPanel14.setOpaque(false);
+        jPanel14.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 90, 21));
 
         SignInBtn.setBackground(new java.awt.Color(3, 52, 110));
         SignInBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         signInTxt.setFont(new java.awt.Font("Samsung Sans", 0, 18)); // NOI18N
-        signInTxt.setForeground(new java.awt.Color(110, 172, 218));
+        signInTxt.setForeground(new java.awt.Color(207, 243, 255));
         signInTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         signInTxt.setText("Sign In");
         signInTxt.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -131,12 +285,16 @@ public class frmregister extends javax.swing.JFrame {
         SignInBtn.setLayout(SignInBtnLayout);
         SignInBtnLayout.setHorizontalGroup(
             SignInBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(signInTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
+            .addComponent(signInTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
         );
         SignInBtnLayout.setVerticalGroup(
             SignInBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(signInTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(SignInBtnLayout.createSequentialGroup()
+                .addComponent(signInTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 22, Short.MAX_VALUE))
         );
+
+        jPanel14.add(SignInBtn);
 
         RegisterBtn.setBackground(new java.awt.Color(3, 52, 110));
         RegisterBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -150,7 +308,7 @@ public class frmregister extends javax.swing.JFrame {
         });
 
         registerTxt.setFont(new java.awt.Font("Samsung Sans", 0, 18)); // NOI18N
-        registerTxt.setForeground(new java.awt.Color(110, 172, 218));
+        registerTxt.setForeground(new java.awt.Color(207, 243, 255));
         registerTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         registerTxt.setText("Register");
         registerTxt.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -163,168 +321,23 @@ public class frmregister extends javax.swing.JFrame {
         RegisterBtn.setLayout(RegisterBtnLayout);
         RegisterBtnLayout.setHorizontalGroup(
             RegisterBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(registerTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
+            .addComponent(registerTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
         );
         RegisterBtnLayout.setVerticalGroup(
             RegisterBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(registerTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
+            .addGroup(RegisterBtnLayout.createSequentialGroup()
+                .addComponent(registerTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 19, Short.MAX_VALUE))
         );
 
-        Color.setBackground(new java.awt.Color(226, 226, 182));
-        Color.setFont(new java.awt.Font("Samsung Sans", 0, 18)); // NOI18N
-        Color.setForeground(new java.awt.Color(226, 226, 182));
-        Color.setText("Color:");
+        jPanel14.add(RegisterBtn);
 
-        colorTxt.setBackground(new java.awt.Color(2, 21, 38));
-        colorTxt.setFont(new java.awt.Font("Samsung Sans", 0, 14)); // NOI18N
-        colorTxt.setForeground(new java.awt.Color(226, 226, 182));
-        colorTxt.setText("Enter your favorite color");
-        colorTxt.setBorder(null);
-        colorTxt.setMaximumSize(new java.awt.Dimension(96, 22));
-        colorTxt.setMinimumSize(new java.awt.Dimension(96, 22));
-        colorTxt.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                colorTxtMouseClicked(evt);
-            }
-        });
-        colorTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                colorTxtActionPerformed(evt);
-            }
-        });
+        jPanel7.add(jPanel14, java.awt.BorderLayout.PAGE_START);
+        jPanel14.getAccessibleContext().setAccessibleName("");
 
-        Email.setBackground(new java.awt.Color(226, 226, 182));
-        Email.setFont(new java.awt.Font("Samsung Sans", 0, 18)); // NOI18N
-        Email.setForeground(new java.awt.Color(226, 226, 182));
-        Email.setText("Email:");
+        jPanel2.add(jPanel7);
 
-        emailTxt.setBackground(new java.awt.Color(2, 21, 38));
-        emailTxt.setFont(new java.awt.Font("Samsung Sans", 0, 14)); // NOI18N
-        emailTxt.setForeground(new java.awt.Color(226, 226, 182));
-        emailTxt.setText("Enter your email");
-        emailTxt.setBorder(null);
-        emailTxt.setMaximumSize(new java.awt.Dimension(96, 22));
-        emailTxt.setMinimumSize(new java.awt.Dimension(96, 22));
-        emailTxt.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                emailTxtMouseClicked(evt);
-            }
-        });
-        emailTxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                emailTxtActionPerformed(evt);
-            }
-        });
-
-        vista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/vista.png"))); // NOI18N
-        vista.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        vista.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                vistaMousePressed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(237, 237, 237)
-                        .addComponent(SignInBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(68, 68, 68)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(Color)
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(colorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(Username)
-                                .addGap(13, 13, 13)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(userTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(Password, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(passTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(38, 38, 38))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                                .addGap(106, 106, 106)
-                                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(Email)
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(emailTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(RegisterBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(237, 237, 237)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(vista)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(vista)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(Username, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(userTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(0, 0, 0)
-                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(Password, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(passTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(colorTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Color, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, 0)
-                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(emailTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, 0)
-                        .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(25, 25, 25)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(RegisterBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(SignInBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(142, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout BgPanelLayout = new javax.swing.GroupLayout(BgPanel);
-        BgPanel.setLayout(BgPanelLayout);
-        BgPanelLayout.setHorizontalGroup(
-            BgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        BgPanelLayout.setVerticalGroup(
-            BgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BgPanelLayout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        BgPanel.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 797, 370));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -334,42 +347,11 @@ public class frmregister extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(BgPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(BgPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 522, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void userTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userTxtMouseClicked
-        userTxt.setText("");
-    }//GEN-LAST:event_userTxtMouseClicked
-
-    private void userTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_userTxtActionPerformed
-
-    private void passTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_passTxtMouseClicked
-
-        passTxt.setText("");
-
-    }//GEN-LAST:event_passTxtMouseClicked
-
-    private void colorTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_colorTxtMouseClicked
-        // TODO add your handling code here:
-        colorTxt.setText("");
-    }//GEN-LAST:event_colorTxtMouseClicked
-
-    private void colorTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colorTxtActionPerformed
-        
-    }//GEN-LAST:event_colorTxtActionPerformed
-
-    private void emailTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_emailTxtMouseClicked
-        emailTxt.setText("");
-    }//GEN-LAST:event_emailTxtMouseClicked
-
-    private void emailTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailTxtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_emailTxtActionPerformed
 
     private void RegisterBtnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegisterBtnMousePressed
         // TODO add your handling code here:
@@ -382,16 +364,16 @@ public class frmregister extends javax.swing.JFrame {
     private void registerTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registerTxtMouseClicked
         String username=userTxt.getText();
         String email=emailTxt.getText();
-        String color=colorTxt.getText();
+        //String color=colorTxt.getText();
         String password=passTxt.getText();
         
-        if(username.isEmpty() || email.isEmpty() || color.isEmpty() || password.isEmpty()){
+        if(username.isEmpty() || email.isEmpty() || password.isEmpty()){
             JOptionPane.showMessageDialog(null, "Debe llenar los Datos");
-        //Hay que hacer la query
+        
         }
         else{
             try{
-                String consulta = "INSERT INTO users(username,	email, color, password)values('"+username+"', '"+email+"', '"+color+"', '"+password+"')";
+                String consulta = "INSERT INTO users(username, email, password)values('"+username+"', '"+email+"', '"+password+"')";
                 PreparedStatement  ps = cn.prepareStatement(consulta);
                 ps.executeUpdate();
                 JOptionPane.showMessageDialog(null, "Usuario creado correctamente.");
@@ -406,6 +388,33 @@ public class frmregister extends javax.swing.JFrame {
         fl = new frmlogin();
         fl.setVisible(true);
     }//GEN-LAST:event_signInTxtMouseClicked
+
+    private void userTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_userTxtActionPerformed
+
+    private void userTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userTxtMouseClicked
+        
+        userTxt.setText("");
+        
+    }//GEN-LAST:event_userTxtMouseClicked
+
+    private void emailTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_emailTxtActionPerformed
+
+    private void emailTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_emailTxtMouseClicked
+        emailTxt.setText("");
+    }//GEN-LAST:event_emailTxtMouseClicked
+
+    private void passTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_passTxtMouseClicked
+
+        passTxt.setText("");
+    }//GEN-LAST:event_passTxtMouseClicked
+
+    private void passTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passTxtActionPerformed
 
     private void vistaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_vistaMousePressed
         if (isPasswordVisible) {
@@ -454,22 +463,28 @@ public class frmregister extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel BgPanel;
-    private javax.swing.JLabel Color;
     private javax.swing.JLabel Email;
     private javax.swing.JLabel IMG;
     private javax.swing.JLabel Password;
     private javax.swing.JPanel RegisterBtn;
     private javax.swing.JPanel SignInBtn;
     private javax.swing.JLabel Username;
-    private javax.swing.JTextField colorTxt;
     private javax.swing.JTextField emailTxt;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JPasswordField passTxt;
     private javax.swing.JLabel registerTxt;
     private javax.swing.JLabel signInTxt;
